@@ -45,3 +45,9 @@ Este é o pacote que prepara todas as entidades básicas para serem identificáv
 ### cashbackDomain.setup ###
 
 Contém apenas uma classe, `CashbackConfig` - que representa o contexto do modelo lógico. Ele é utilizado aqui para organizar todos os objetos do sistema.
+
+## CashbackConfigTest ##
+
+Uma classe para testar alguns casos de uso do `CashbackConfig` e garantir uma parte da lógica do objeto.
+
+Outra grande parte da lógica, na verdade, está sendo testada no projeto `mongolitico`, que é a parte que interage com o banco de dados MongoDB.
