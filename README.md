@@ -26,7 +26,7 @@ Para manter o isolamento deste modelo lógico, há outros modelos *helpers*, com
 
 Para facilitar os testes deste projeto, há a classe `MemoryDB`, que implementa `DataAccessInterface` em uma estrutura de dados em memória.
 
-Para minimizar a quantidade de código replicado no armazenamento de diferentes tipos de objetos, há a classe `KeyValueStore`, que essencialmente pode guardar qualquer tipo de dado.
+Para minimizar a quantidade de código replicado no armazenamento de diferentes tipos de objetos, há a classe `KeyValueStore`, que essencialmente pode guardar qualquer tipo de dado e deve ser estendida por qualquer entidade que se use para armazenar os diferentes objetos do negócio (`Customer`, `Promo`, `Album` etc).
 
 Para portar todo este projeto para qualquer tipo de modelo de persistência, basta estender o modelo de dados, implementando a interface `DataAccessInterface`. Ela funciona como uma fachada para interagir com as camadas de persistência.
 
